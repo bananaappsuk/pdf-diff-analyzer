@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pdf
+comparison_result.txt
+server.log
+.env
+*.txt
+!requirements.txt
