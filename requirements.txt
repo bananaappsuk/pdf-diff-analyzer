@@ -3,6 +3,4 @@ uvicorn
 httpx
 python-multipart
 pymupdf
-pypdf
 openai
-mangum

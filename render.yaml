@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pdf-diff-analyzer
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false

@@ -1,11 +1,19 @@
 import httpx
 from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, HttpUrl
 
 from pdf_diff_analyzer import compare_pdfs
 
 app = FastAPI(title="PDF Diff Analyzer", version="1.0.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 # ── URL-based comparison ──────────────────────────────────────────────────────

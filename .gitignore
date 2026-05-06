@@ -5,5 +5,6 @@ __pycache__/
 comparison_result.txt
 server.log
 .env
+.venv/
 *.txt
 !requirements.txt
