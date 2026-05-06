@@ -3,6 +3,8 @@ __pycache__/
 *.pyo
 *.pdf
 *.txt
+!requirements.txt
 server.log
 .env
 .git/
+.venv/
